@@ -21,7 +21,7 @@ to words containing two to five letters, to avoid making it too horribly
 difficult.) Instead of telling the user that they should guess a smaller or larger
 number, have them choose an earlier or later word in the dict.
 '''
-
+#There is no point in creating an object of dict Class, so better just use a list.
 
 import random
 
