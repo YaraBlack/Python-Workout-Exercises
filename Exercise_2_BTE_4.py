@@ -11,7 +11,7 @@ are integers or can be turned into integers, ignoring the others.
 
 def mysum(*args):
     sum = 0
-    check = (int, float, bool)                                  #temporary solution, probably will change
+    check = (int, float, bool)                                  #temporary solution, probably will change someday
     for i in args:
         if type(i) in check:
             sum += int(i)
