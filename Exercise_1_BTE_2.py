@@ -22,7 +22,6 @@ correct number base; “10” might mean 10 (decimal), or 2 (binary), or 16
 (hexadecimal).
 '''
 
-
 import random
 
 
