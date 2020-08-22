@@ -32,6 +32,7 @@ def GuessWord():
     print("The dictionary is:{}".format(dictionary))
     while True:
         userInput = input("Guess a word: ")
+        
         if userInput == guessedWord:
             print("Just right.")
             break
