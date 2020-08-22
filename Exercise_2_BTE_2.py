@@ -17,5 +17,4 @@ def myavg(numbers):
         sum += i
     return sum/quantity
 
-
 print('{:.2f}'.format(myavg([1, 2, 5])))
