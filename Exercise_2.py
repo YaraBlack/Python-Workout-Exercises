@@ -1,6 +1,6 @@
 #Summing numbers
 '''
-Summ all numbers that is inputed in the function
+Sum all numbers that is inputed in the function
 '''
 
 def mysum(*args):
