@@ -27,10 +27,10 @@ import random
 
 
 def GuessNumber():
-    num_base = random.choice([i for i in range(2,17)])                  #BTE_2 
-    number = int(str(random.randint(0,100)), base = num_base)           #BTE_2 
+    num_base = random.choice([i for i in range(2,17)])
+    number = int(str(random.randint(0,100)), base = num_base)
     while True:
-        userInput = int(input("Guess a number: "), base = num_base)      #BTE_2 ...,base = num_base)
+        userInput = int(input("Guess a number: "), base = num_base)
         if userInput == number:
             print("Just right.")
             break

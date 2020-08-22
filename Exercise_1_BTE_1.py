@@ -24,9 +24,9 @@ import random
 
 def GuessNumber(): 
     number = random.randint(0,100)
-    tries = 0                                                           #BTE_1
+    tries = 0
     while tries != 3:
-        tries +=1                                                       #BTE_1 
+        tries +=1
         userInput = int(input("Guess a number: "))
         if userInput == number:
             print("Just right.")
@@ -34,12 +34,12 @@ def GuessNumber():
 
         elif userInput < number:
             print("Too low.")
-            print("You have %d tries left!" % (3-tries))                #BTE_1 
+            print("You have %d tries left!" % (3-tries))
 
         elif userInput > number:
             print("Too high.")
-            print("You have %d tries left!" % (3-tries))                #BTE_1 
-    else:                                                               #BTE_1 
-        print("Unfortunately, you didn't guess in time!")               #BTE_1 
+            print("You have %d tries left!" % (3-tries))
+    else:
+        print("Unfortunately, you didn't guess in time!")
 
 GuessNumber()
