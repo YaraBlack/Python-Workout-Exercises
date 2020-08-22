@@ -24,5 +24,4 @@ def wordsFunc(words_list):
     averLen /= len(words_list)
     return (shortLen, longLen, averLen)
 
-
 print(wordsFunc(['apple', 'orange', 'banana', 'watermelon', 'kiwi']))
