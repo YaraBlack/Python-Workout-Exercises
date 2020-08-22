@@ -15,12 +15,10 @@ a function in Python 3 that defines a parameter after *args, I’d suggest avoid
 it and just taking two arguments—a list and an optional starting point.
 '''
 
-
 def mysum(listOfNum, startingV = 0):
     sum = 0
     for i in listOfNum:
         sum += i
     return sum + startingV
-
 
 print(mysum([1, 2, 3], 5))
