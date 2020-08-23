@@ -19,15 +19,19 @@ import random
 def GuessNumber():
     number = random.randint(0,100)
     while True:
-        userInput = int(input("Guess a number: "))
-        if userInput == number:
-            print("Just right.")
-            break
+        try:                                                #For the value check
+            userInput = int(input("Guess a number: "))
+            if userInput == number:
+                print("Just right.")
+                break
 
-        elif userInput < number:
-            print("Too low.")
+            elif userInput < number:
+                print("Too low.")
 
-        elif userInput > number:
-            print("Too high.")
+            elif userInput > number:
+                print("Too high.")
+        except ValueError:
+            print("Hey! That's not a valid number!")        #Checking if the value is valid
+        
 
 GuessNumber()
