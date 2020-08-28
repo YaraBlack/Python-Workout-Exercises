@@ -21,7 +21,6 @@ but the rest of the word isn’t), then the Pig Latin translation should be
 similarly capitalized.
 '''
 
-#I think this code can be optimized in some way
 def pig_latin(word):
     if word[0].isupper():
         if word[0] in "AEIOU":
