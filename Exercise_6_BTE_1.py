@@ -17,6 +17,10 @@ Take a text file, creating (and printing) a nonsensical sentence from the nth
 word on each of the first 10 lines, where n is the line number.
 '''
 
+def generate_txt():
+    with open('Exercise_6_BTE_1.txt', 'x') as file:
+        file.write()
+
 def pl_sentence(sentence):
     temp = ""
     for word in sentence.split():
