@@ -33,13 +33,20 @@ def open_txt():
         return words
 
 def pl_sentence(sentence):
-    temp = ""
-    for word in sentence.split():
-        if word[0] in "aeiou":
-            temp += f"{word}way "
-        else:
-            temp += f'{word[1:]}{word[0]}ay '
-    return temp
+    words = []
+    sentences = []
+    for n_line in range(0,len(sentence), 10):
+        sentences.append(sentence[n_line:n_line+10])
+    for n_word in range(0, 10):
+        words.append(sentences[n_word][n_word:])
+    # temp = ""
+    # for word in sentence.split():
+    #     if word[0] in "aeiou":
+    #         temp.join(f"{word}way ")
+    #     else:
+    #         temp += f'{word[1:]}{word[0]}ay '
+    # return temp
+    # return [' '.join(sentence[i:i+10]) for i in range(0,len(sentence),10)]
+    return words
 
-# print(pl_sentence('this is a test translation'))
-print(open_txt())
+print(pl_sentence(open_txt()))
