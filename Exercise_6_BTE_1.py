@@ -17,9 +17,20 @@ Take a text file, creating (and printing) a nonsensical sentence from the nth
 word on each of the first 10 lines, where n is the line number.
 '''
 
-def generate_txt():
-    with open('Exercise_6_BTE_1.txt', 'x') as file:
-        file.write()
+'''
+word = [
+    word1 word2 word3
+    word4 word5 word6
+    word7 word8 word9
+    ]
+
+sentence: word1 word2 word3 word5 word6 word9
+'''
+def open_txt():
+    with open('D:\Workspace\Python-Workout-Exercises\words.txt', 'r') as file:
+        reader = file.read()
+        words = reader.replace(' ', '').replace('\n','').split(',')
+        return words
 
 def pl_sentence(sentence):
     temp = ""
@@ -30,4 +41,5 @@ def pl_sentence(sentence):
             temp += f'{word[1:]}{word[0]}ay '
     return temp
 
-print(pl_sentence('this is a test translation'))
+# print(pl_sentence('this is a test translation'))
+print(open_txt())
