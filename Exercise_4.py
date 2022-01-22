@@ -12,17 +12,12 @@ import string
 
 def hex_output():
     result = 0
-    hex_num = input("Enter a hex number: 0x")
-    for i in hex_num:
-        if i not in string.hexdigits:
-            check = False
-            break
-        else: check = True
-           
-    if check == True:  
+    hex_num = input("Enter a hex number: 0x")           
+    if all((c in string.hexdigits) for c in hex_num):  
         for ind, val in enumerate(reversed(hex_num)):
             result += int(val, 16) * 16 ** ind
         print("Decimal equivalent is:", result)
+        print(hex(result)) 
     else: print ("Wrong character!")
 
 hex_output()
