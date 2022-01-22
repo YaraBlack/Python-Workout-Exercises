@@ -11,10 +11,10 @@ permissible to use int one digit at a time.
 
 #Beyond the exercise 1 (BTE_1)
 '''
-Reimplement the solution for this exercise such that it doesn’t use the 'int' function
+Reimplement the solution for this exercise such that it doesn't use the 'int' function
 at all, but rather uses the built-in 'ord' and 'chr' functions to identify the
 character. This implementation should be more robust, ignoring characters
-that aren’t legal for the entered number base.
+that aren't legal for the entered number base.
 '''
 
 def hex_output():
