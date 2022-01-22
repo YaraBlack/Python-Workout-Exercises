@@ -2,7 +2,7 @@
 '''
 Write a function
 called pl_sentence that takes a string containing several words, separated by
-spaces. (To make things easier, we won’t actually ask for a real sentence. More specifically,
+spaces. (To make things easier, we won't actually ask for a real sentence. More specifically,
 there will be no capital letters or punctuation.)
 So, if someone were to call
     pl_sentence('this is a test translation')
