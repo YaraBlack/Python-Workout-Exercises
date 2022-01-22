@@ -1,6 +1,6 @@
 #Run timing
 '''
-For this exercise, then, we’ll assume that you run 10 km each day as part of your
+For this exercise, then, we'll assume that you run 10 km each day as part of your
 exercise regime. You want to know how long, on average, that run takes.
 Write a function (run_timing) that asks how long it took for you to run 10 km.
 The function continues to ask how long (in minutes) it took for additional runs, until
@@ -16,7 +16,9 @@ def run_timing():
         try:
             userInput = input("Enter 10 km run time:")
             if userInput:
-                calculating.append(float(userInput))
+                if int(userInput) > 0:
+                    calculating.append(float(userInput))
+                else: print ("Wrong time!")
             else: break
         except ValueError:
             print("Hey! That's not a valid number!")
